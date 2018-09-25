@@ -1,0 +1,162 @@
+#resbutton {
+    text-align: center;
+    /*margin: auto;*/
+}
+
+#favbutton {
+    margin: 0;
+}
+
+#exp {
+    margin-left: 200px;
+}
+
+#detailnav li {
+    float: right;
+    display: inline;
+}
+
+#reset {
+    border: #c7c5c5 solid 1px;
+}
+
+#searchres {
+    text-align: center;
+}
+
+#front {
+    background-color: rgb(250, 250, 250);
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+/*@media {*/
+    /*.card-columns {*/
+        /*-webkit-column-count: 4;*/
+        /*-moz-column-count: 4;*/
+        /*column-count:4;}*/
+/*}*/
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#next1div, #next2div, #next3div {
+    text-align: center;
+    color: black;
+
+}
+
+#next1, #previous1, #next2, #previous2 {
+    border: #c7c5c5 solid 1px;
+}
+
+#detailbutton{
+    text-align: right;
+    background-color: white;
+}
+.stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+    color: white;
+}
+
+.stars-outer::before {
+    content: "\2605 \2605 \2605 \2605 \2605";
+}
+
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.stars-inner::before {
+    content: "\2605 \2605 \2605 \2605 \2605";
+    color: #f8ce0b;
+}
+
+#profilephoto{
+    width: 80px;
+    height: 80px;
+}
+
+.norec{
+    margin-top: 30px;
+    background-color: yellow;
+}
+
+.view-page.ng-enter{
+    animation: moveFromRight 1s both;
+}
+/*.view-page.ng-leave{
+    animation: moveToLeft 1s both;
+}*/
+@keyframes moveFromRight{
+    from { transform: translateX(100%); }
+}
+@keyframes moveToLeft{
+    to { transform: translateX(-100%); }
+}
+
+.view-page1.ng-enter{
+    animation: moveFromLeft 1s both;
+}
+/*.view-page1.ng-leave{
+    animation: moveToRight 1s both;
+}*/
+@keyframes moveFromLeft{
+    from { transform: translateX(-100%); }
+}
+@keyframes moveToRight{
+    to { transform: translateX(100%); }
+}
+
+.sample-show-hide {
+    transition: all linear 0.5s;
+    opacity: 1;
+}
+.sample-show-hide.ng-hide {
+    opacity: 0;
+}
+
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+.needCheck.ng-invalid.ng-touched {
+    border:2px red solid;
+    /*background-color: red;*/
+}
